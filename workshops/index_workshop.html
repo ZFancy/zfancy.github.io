@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>HKBU-RIKEN Workshop 2024</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+<script type="text/javascript">
+var myStartDate = "2023-11-23T"
+var myEndDate = "2023-11-24T"
+var myStartTime = "09:30"
+var myEndTime = "17:00"
+var myTimeZone = "+08:00"
+
+var myStartTime = new Date(myStartDate + myStartTime + ":00.000" + myTimeZone);
+var myEndTime = new Date(myEndDate + myEndTime + ":00.000" + myTimeZone);
+var myRefTime = new Date(myStartDate + "00:00:00.000" + myTimeZone);
+
+function getTimezone() {
+  var offset = -(new Date()).getTimezoneOffset()/60;
+  return ("UTC" + (offset >= 0 ? "+" : "") + offset);
+}
+
+function getLocalTimezone() {
+  try {
+    return Intl.DateTimeFormat().resolvedOptions().timeZone + " time (" + getTimezone() + ", your browser's time zone)";
+  }
+  catch(e) {
+    return " (" + getTimezone() + ", i.e., your browser's time zone)";
+  }
+}
+
+function displayTime(dt) {
+  var hour = dt.getHours();
+  var minute = dt.getMinutes();
+  var temp = '' + ((hour < 10) ? '0' : '') + hour;
+  temp += ((minute < 10) ? ':0' : ':') + minute;
+  return temp;
+}
+
+function writeTimeRange(startHour, startMin, endHour, endMin) {
+  var oneMin = 1000 * 60;
+  var oneHour = oneMin * 60;
+  var startTime = new Date(myRefTime.getTime() + startHour * oneHour + startMin * oneMin);
+  var endTime = new Date(myRefTime.getTime() + endHour * oneHour + endMin * oneMin);
+  document.write(displayTime(startTime));
+  document.write(" -- ");
+  if (endTime.getDay() != myStartTime.getDay()) {
+    document.write(myEndTime.toLocaleDateString('en-US', {month:'short', day:'numeric'}));
+	document.write(" ");
+  }
+  document.write(displayTime(endTime));
+  return;
+}
+</script>
+
+
+ <body>
+    <section class="page-header">
+      <h1 class="project-name">HKBU-RIKEN Workshop 2024</h1>
+      <h2 class="project-tagline">
+      <noscript>Nov 23 9:30 -- Nov 24 17:00 UTC+9:00 (the official time zone)</noscript>
+      <script type="text/javascript">
+		document.write("HKBU, Hong Kong SAR; May 23 -- May 25, HK time (UTC+8)");
+      </script>
+      </h2>
+    </section>
+
+<section class="main-content">
+    <center>[ <a href="#program">Program</a>,
+              <a href="#schedule">Schedule</a>]</center>
+
+<p>This is an initial overview of the HKBU-RIKEN workshop, and more details are still being updated. Stay tuned!</p>
+ 
+
+<h1 id="program">Program</h1>
+
+	<h2>Venue & Date</h2>
+        <p><b>Venue:</b> HKBU CS Department.</p>
+		<p><b>Date:</b> May 23 to May 25 (HK time (UTC+8)).</p>
+
+    <h1 id="schedule">Schedule</h1>
+        <p>The workshop will use <font color='FF0000'>
+        HK time (UTC+8)
+        </font> for scheduling, and it will be combined with invited talks and contributed talks.</p>
+	
+<table>
+  <thead>
+    <tr><th style="width:25ex">Time</th><th>Event</th></tr>
+  </thead>
+  <tbody>
+  <tr><td><b>May 23</b></td></tr>
+    <tr><td>09:00 -- 09:05<noscript>09:00 -- 09:05</noscript></td>
+        <td><b>Opening Remarks</b></td></tr>
+    <tr><td></td><td><b>Host</b>: <a href="https://www.math.hkbu.edu.hk/~mng/" target="_blank">Michael Ng</a> (HKBU)</td></tr>
+    
+    <!-- <tr><td>09:05 -- 10:35<noscript>09:05 -- 10:35</noscript></td>
+      <td><b>Session 1</b></td></tr>
+  <tr><td></td><td><b>Title</b>: Enhancing Language Models through Improved Pre-Training and Fine-Tuning<br>
+      <b>Speaker</b>: <a href="https://www.cse.ust.hk/~jamesk/" target="_blank">James Tin Yau Kwok</a> (Hong Kong University of Science and Technology)</td></tr>
+  <tr><td></td><td><b>Title</b>: The "Gene" of Machine Learning: Make Machines Learn Like Humans<br>
+      <b>Speaker</b>: <a href="http://palm.seu.edu.cn/xgeng/" target="_blank">Xin Geng</a> (Southeast University)</td></tr> -->
+
+     <tr><td>09:05 -- 10:35<noscript>09:05 -- 10:35</noscript></td>
+        <td><b>Session 1</b></td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://www.ms.k.u-tokyo.ac.jp/sugi/" target="_blank">Masashi Sugiyama</a> (RIKEN)</td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://emtiyaz.github.io/" target="_blank">Emti Khan</a> (RIKEN)</td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://www.comp.hkbu.edu.hk/~jiming/" target="_blank">Jiming Liu</a> (HKBU)</td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://www.comp.hkbu.edu.hk/~pcyuen/" target="_blank">Pong Chi Yuen</a> (HKBU)</td></tr>
+        <tr><td></td><td><b>Session Chair</b>: <a href="https://bhanml.github.io/" target="_blank">Bo Han</a> (HKBU)</td></tr>
+
+    <tr><td>10:35 -- 11:00<noscript>10:35 -- 11:00</noscript></td>
+        <td><b>Coffee Break</b></td></tr>
+    
+     <tr><td>11:00 -- 12:30<noscript>11:00 -- 12:30</noscript></td>
+        <td><b>Session 2</b></td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://mse.umd.edu/clark/faculty/722/Ichiro-Takeuchi" target="_blank">Ichiro Takeuchi</a> (RIKEN)</td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://www.math.hkbu.edu.hk/~mng/" target="_blank">Michael Ng</a> (HKBU)</td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://www.comp.hkbu.edu.hk/~ymc/" target="_blank">Yiu-ming Cheung</a> (HKBU)</td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://www.comp.hkbu.edu.hk/~william/" target="_blank">William Cheung</a> (HKBU)</td></tr>
+        <tr><td></td><td><b>Session Chair</b>: <a href="https://www.comp.hkbu.edu.hk/~xinhuang/" target="_blank">Xin Huang</a> (HKBU)</td></tr>
+		
+	<tr><td>12:30 -- 14:00<noscript>12:30 -- 14:00</noscript></td>
+        <td><b>Lunch Time</b></td></tr>
+    
+     <tr><td>14:00 -- 16:00<noscript>14:00 -- 16:00</noscript></td>
+        <td><b>Session 3</b></td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://ibis.t.u-tokyo.ac.jp/suzuki/" target="_blank">Taiji Suzuki</a> (RIKEN)</td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://qibinzhao.github.io/" target="_blank">Qibin Zhao</a> (RIKEN)</td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://www.comp.hkbu.edu.hk/~lichen/" target="_blank">Li Chen</a> (HKBU)</td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://www.comp.hkbu.edu.hk/~xinhuang/" target="_blank">Xin Huang</a> (HKBU)</td></tr>
+        <tr><td></td><td><b>Session Chair</b>: <a href="https://www.comp.hkbu.edu.hk/v1/?page=profile&id=ericluzhang" target="_blank">Eric Zhang</a> (HKBU)</td></tr>
+		
+	<tr><td>16:00 -- 16:30<noscript>16:00 -- 16:30</noscript></td>
+        <td><b>Coffee Break</b></td></tr>
+    
+     <tr><td>16:30 -- 18:30<noscript>16:30 -- 18:30</noscript></td>
+        <td><b>Session 4</b></td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://minh-ha-quang.github.io/" target="_blank">Minh Ha Quang</a> (RIKEN)</td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://sites.google.com/view/junsakuma/english" target="_blank">Jun Sakuma</a> (RIKEN)</td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://www.comp.hkbu.edu.hk/v1/?page=profile&id=ericluzhang" target="_blank">Eric Zhang</a> (HKBU)</td></tr>
+        <tr><td></td><td><b>Speaker</b>: <a href="https://bhanml.github.io/" target="_blank">Bo Han</a> (HKBU)</td></tr>
+        <tr><td></td><td><b>Session Chair</b>: <a href="https://majingcuhk.github.io/" target="_blank">Jin Ma</a> (HKBU)</td></tr>
+		
+	<tr><td>18:30 -- 18:35<noscript>18:30 -- 18:35</noscript></td>
+        <td><b>Closing Remarks</b></td></tr>
+        <tr><td></td><td><b>Host</b>: <a href="https://www.comp.hkbu.edu.hk/~xujl/" target="_blank">Jianliang Xu</a> (HKBU)</td></tr>
+
+        <tr><td>19:00 -- 20:30<noscript>19:00 -- 20:30</noscript></td>
+          <td><b>Dinner Time</b></td></tr>
+		
+		
+	<tr><td><b>May 24</b></td></tr>
+  <tr><td>09:00 -- 09:05<noscript>09:00 -- 09:05</noscript></td>
+    <td><b>Opening Remarks</b></td></tr>
+<tr><td></td><td><b>Host</b>: <a href="https://www.comp.hkbu.edu.hk/~bchoi/" target="_blank">Byron Choi</a> (HKBU)</td></tr>
+    
+        <tr><td>09:05 -- 10:35<noscript>09:05 -- 10:35</noscript></td>
+          <td><b>Session 1</b></td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://niug1984.github.io/" target="_blank">Gang Niu</a> (RIKEN)</td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://takashiishida.github.io/" target="_blank">Takashi Ishida</a> (RIKEN)</td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://majingcuhk.github.io/" target="_blank">Jin Ma</a> (HKBU)</td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://www.comp.hkbu.edu.hk/~csygliu/" target="_blank">Yang Liu</a> (HKBU)</td></tr>
+          <tr><td></td><td><b>Session Chair</b>: <a href="https://jchenhkg.github.io/" target="_blank">Jie Chen</a> (HKBU)</td></tr>
+  
+      <tr><td>10:35 -- 11:00<noscript>10:35 -- 11:00</noscript></td>
+          <td><b>Coffee Break</b></td></tr>
+      
+       <tr><td>11:00 -- 12:30<noscript>11:00 -- 12:30</noscript></td>
+          <td><b>Session 2</b></td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://sites.google.com/view/shosonoda/home" target="_blank">Sho Sonoda</a> (RIKEN)</td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://scholar.google.com/citations?user=n1aKdTkAAAAJ&hl=en" target="_blank">Junshi Xia</a> (RIKEN)</td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://www.comp.hkbu.edu.hk/~renjiewan/" target="_blank">Renjie Wan</a> (HKBU)</td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://jchenhkg.github.io/" target="_blank">Jie Chen</a> (HKBU)</td></tr>
+          <tr><td></td><td><b>Session Chair</b>: <a href="https://www.comp.hkbu.edu.hk/~csygliu/" target="_blank">Yang Liu</a> (HKBU)</td></tr>
+      
+    <tr><td>12:30 -- 14:00<noscript>12:30 -- 14:00</noscript></td>
+          <td><b>Lunch Time</b></td></tr>
+      
+       <tr><td>14:00 -- 16:00<noscript>14:00 -- 16:00</noscript></td>
+          <td><b>Session 3</b></td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://shuochenya.github.io/" target="_blank">Shuo Chen</a> (RIKEN)</td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://zhangzy07.github.io/" target="_blank">Zhen-Yu Zhang</a> (RIKEN)</td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://ychen-stat-ml.github.io/" target="_blank">Yifan Chen</a> (HKBU)</td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://kaiyangzhou.github.io/" target="_blank">Kaiyang Zhou</a> (HKBU)</td></tr>
+          <tr><td></td><td><b>Session Chair</b>: <a href="https://jchenhkg.github.io/" target="_blank">Jie Chen</a> (HKBU)</td></tr>
+      
+    <tr><td>16:00 -- 16:30<noscript>16:00 -- 16:30</noscript></td>
+          <td><b>Coffee Break</b></td></tr>
+      
+       <tr><td>16:30 -- 18:30<noscript>16:30 -- 18:30</noscript></td>
+          <td><b>Session 4</b></td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://weihuang05.github.io/" target="_blank">Wei Huang</a> (RIKEN)</td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://amelieczhou.github.io/" target="_blank">Amelie Zhou</a> (HKBU)</td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://renchi.ac.cn/" target="_blank">Renchi Yang</a> (HKBU)</td></tr>
+          <tr><td></td><td><b>Speaker</b>: <a href="https://www.juncheng-wang.com/" target="_blank">Juncheng Wang</a> (HKBU)</td></tr>
+          <tr><td></td><td><b>Session Chair</b>: <a href="https://www.comp.hkbu.edu.hk/~renjiewan/" target="_blank">Renjie Wan</a> (HKBU)</td></tr>
+      
+    <tr><td>18:30 -- 18:35<noscript>18:30 -- 18:35</noscript></td>
+          <td><b>Closing Remarks</b></td></tr>
+          <tr><td></td><td><b>Host</b>: <a href="" target="_blank">Bo Han</a> (HKBU)</td></tr>
+  
+		
+  <tr><td><b>May 25</b></td></tr>
+  <tr><td></td><td><b>Discussion on Future Collaboration</b></td></tr>
+
+  </tbody>
+</table>
+
+
+<footer class="site-footer">
+    <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+</footer>
+</section>
+</body></html>
