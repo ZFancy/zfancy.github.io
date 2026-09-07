@@ -126,7 +126,7 @@
     </p>
 
     <p>
-        My research agenda is the <b>lifecycle reliability of evolving AI systems</b>. Reliability is no longer a property to be verified once at deployment; it erodes as a system learns, adapts, and accumulates memory, exactly when that system is being trusted with high-stakes, real-world decisions. <i>Scientifically</i>, I study why some capabilities survive that change while others quietly fail: where knowledge sits inside a model, what an update actually touches, and what the system meets at inference jointly determine which ones hold. <i>Methodologically</i>, I build diagnostic benchmarks that make these failures measurable, then design training- and inference-time interventions against what they reveal. The agenda runs along three threads:
+        My research agenda is the <b>lifecycle reliability of evolving AI systems</b>. Reliability is no longer a property to be verified once at deployment; it erodes as a system learns, adapts, and accumulates memory, exactly when that system is being deployed for high-stakes, real-world decisions. <i>Scientifically</i>, I study why some capabilities survive that change while others quietly fail: where knowledge sits inside a model, what an update actually touches, and what the system meets at inference jointly determine which ones hold. <i>Methodologically</i>, I build diagnostic benchmarks that make these failures measurable, then design training- and inference-time interventions against what they reveal. The agenda runs along three threads:
         <ul>
         <li><b>Building Robustness Against Degradation.</b> How can models and agents withstand adversarial stress by design?<br>
         <a href="https://arxiv.org/abs/2605.25707" target="_blank">[AgentHijack]</a>
@@ -134,7 +134,7 @@
         <a href="https://arxiv.org/abs/2010.01736" target="_blank">[GAIRAT]</a>
         <a href="https://arxiv.org/abs/2211.00269" target="_blank">[ATCL]</a>
         </li>
-        <li><b>Diagnosing Failure and Degradation.</b> Where, when, and why do evolving agents drift, forget, and destabilize?<br>
+        <li><b>Diagnosing Failure and Drift.</b> When has a system moved beyond what it was trained for, and can it tell before the failure surfaces?<br>
         <a href="https://arxiv.org/abs/2605.08715" target="_blank">[AgentForesight]</a>
         <a href="https://arxiv.org/abs/2410.18472" target="_blank">[CoVer]</a>
         <a href="https://arxiv.org/abs/2410.23856" target="_blank">[NoRa]</a>
@@ -318,6 +318,7 @@ and Computer Engineering</a>,</br>
         AgentHijack: Benchmarking Computer Use Agent Robustness to Common Environment Corruptions. <br>               
         In <a href="https://icml.cc/Conferences/2026" target="_blank"><i>International Conference on Machine Learning (ICML 2026)</i></a>, Brazil, 2026. </br>
         <a href="https://openreview.net/pdf?id=0H5Im3Xvuf" target=&ldquo;blank&rdquo;>[PDF]</a>
+        <a href="https://github.com/tmlr-group/AgentHijack" target=&ldquo;blank&rdquo;>[Code]</a>
         <a href="javascript:toggleBibtex('sun2026agenthijack')">[BibTeX]</a>
         <div id="bib_sun2026agenthijack" class="bibtex noshow">
             <pre>
@@ -336,6 +337,7 @@ and Computer Engineering</a>,</br>
         Co-rewarding: Stable Self-supervised RL for Eliciting Reasoning in Large Language Models. <br>               
         In <a href="https://iclr.cc/Conferences/2026" target="_blank"><i>International Conference on Learning Representations (ICLR 2026)</i></a>, Brazil, 2026. </br>
         <a href="https://openreview.net/pdf?id=fDk95XPsCU" target=&ldquo;blank&rdquo;>[PDF]</a>
+        <a href="https://github.com/tmlr-group/Co-rewarding" target=&ldquo;blank&rdquo;>[Code]</a>
         <a href="javascript:toggleBibtex('zhang2026co')">[BibTeX]</a>
         <div id="bib_zhang2026co" class="bibtex noshow">
             <pre>
@@ -353,6 +355,7 @@ and Computer Engineering</a>,</br>
         Decoupling the Class Label and the Target Concept in Machine Unlearning. <br>               
         In <a href="https://iclr.cc/Conferences/2026" target="_blank"><i>International Conference on Learning Representations (ICLR 2026)</i></a>, Brazil, 2026. </br>
         <a href="https://openreview.net/pdf?id=Xpj0yeMhpz" target=&ldquo;blank&rdquo;>[PDF]</a>
+        <a href="https://github.com/tmlr-group/TARF" target=&ldquo;blank&rdquo;>[Code]</a>
         <a href="javascript:toggleBibtex('zhu2026decoupling')">[BibTeX]</a>
         <div id="bib_zhu2026decoupling" class="bibtex noshow">
             <pre>
@@ -370,6 +373,7 @@ and Computer Engineering</a>,</br>
         Bilateral Information-aware Test-time Adaptation for Vision-Language Models. <br>               
         In <a href="https://iclr.cc/Conferences/2026" target="_blank"><i>International Conference on Learning Representations (ICLR 2026)</i></a>, Brazil, 2026. </br>
         <a href="https://openreview.net/pdf?id=vv8EcCoBfr" target=&ldquo;blank&rdquo;>[PDF]</a>
+        <a href="https://github.com/tmlr-group/BITTA" target=&ldquo;blank&rdquo;>[Code]</a>
         <a href="javascript:toggleBibtex('sun2026bilateral')">[BibTeX]</a>
         <div id="bib_sun2026bilateral" class="bibtex noshow">
             <pre>
@@ -387,6 +391,7 @@ and Computer Engineering</a>,</br>
         Towards Understanding Valuable Preference Data for Large Language Model Alignment. <br>               
         In <a href="https://iclr.cc/Conferences/2026" target="_blank"><i>International Conference on Learning Representations (ICLR 2026)</i></a>, Brazil, 2026. </br>
         <a href="https://openreview.net/pdf?id=FUp0KeEEBs" target=&ldquo;blank&rdquo;>[PDF]</a>
+        <a href="https://github.com/tmlr-group/TIF_LossDiff-IRM" target=&ldquo;blank&rdquo;>[Code]</a>
         <a href="javascript:toggleBibtex('zhang2026towards')">[BibTeX]</a>
         <div id="bib_zhang2026towards" class="bibtex noshow">
             <pre>
@@ -404,6 +409,7 @@ and Computer Engineering</a>,</br>
         Towards Effective Evaluations and Comparisons for LLM Unlearning Methods<br>               
         In <a href="https://iclr.cc/Conferences/2025" target="_blank"><i>International Conference on Learning Representations (ICLR 2025)</i></a>, Singapore, 2025. <br>
         <a href="https://arxiv.org/pdf/2406.09179.pdf" target=&ldquo;blank&rdquo;>[PDF]</a>
+        <a href="https://github.com/tmlr-group/Unlearning-with-Control" target=&ldquo;blank&rdquo;>[Code]</a>
         <a href="javascript:toggleBibtex('wang2024unlearning')">[BibTeX]</a>
         <div id="bib_wang2024unlearning" class="bibtex noshow">
             <pre>
@@ -439,10 +445,10 @@ and Computer Engineering</a>,</br>
         Y. Geng, <b>J. Zhu</b>, J. Yao, B. Han.<br>
         Self-Calibrated Tuning of Vision-Language Models for Out-of-Distribution Detection <br>               
         In <a href="https://neurips.cc/Conferences/2024" target="_blank"><i>Advances in Neural Information Processing Systems (NeurIPS 2024)</i></a>, Vancouver, 2024.<br>
-        <a href="https://zfancy.github.io/" target=&ldquo;blank&rdquo;>[PDF]</a>
+        <a href="https://openreview.net/pdf?id=w6vbfSC1y0" target=&ldquo;blank&rdquo;>[PDF]</a>
         <a href="https://github.com/tmlr-group/SCT" target=&ldquo;blank&rdquo;>[Code]</a>
-        <a href="javascript:toggleBibtex('zhang2024what')">[BibTeX]</a>
-        <div id="bib_zhang2024what" class="bibtex noshow">
+        <a href="javascript:toggleBibtex('geng2024self')">[BibTeX]</a>
+        <div id="bib_geng2024self" class="bibtex noshow">
             <pre>
 @inproceedings{geng2024self,
         title={Self-Calibrated Tuning of Vision-Language Models for Out-of-Distribution Detection},
@@ -458,7 +464,7 @@ and Computer Engineering</a>,</br>
         Benchmarking the Reasoning Robustness against Noisy Rationales in Chain-of-thought Prompting <br>               
         In <a href="https://neurips.cc/Conferences/2024" target="_blank"><i>Advances in Neural Information Processing Systems (NeurIPS 2024)</i></a>, Vancouver, 2024.<br>
         <a href="https://arxiv.org/pdf/2410.23856" target=&ldquo;blank&rdquo;>[PDF]</a>
-        <a href="https://zfancy.github.io/" target=&ldquo;blank&rdquo;>[Code]</a>
+        <a href="https://github.com/tmlr-group/NoisyRationales" target=&ldquo;blank&rdquo;>[Code]</a>
         <a href="javascript:toggleBibtex('zhou2024benchmarking')">[BibTeX]</a>
         <div id="bib_zhou2024benchmarking" class="bibtex noshow">
             <pre>
@@ -632,7 +638,7 @@ and Computer Engineering</a>,</br>
         <a href="https://www.computer.org/csdl/journal/tp" target="_blank"><i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</i></a>, 2025. </br>
         <a href="https://ieeexplore.ieee.org/document/11311342" target=&ldquo;blank&rdquo;>[PDF]</a>
         <a href="https://github.com/tmlr-group/SFAT-Star" target=&ldquo;blank&rdquo;>[Code]</a>
-        <a href="javascript:toggleBibtex('zhu2025slacked')">[BibTeX]</a>
+        <a href="javascript:toggleBibtex('zhu2025slack')">[BibTeX]</a>
         <div id="bib_zhu2025slack" class="bibtex noshow">
             <pre>
 @inproceedings{
@@ -788,7 +794,7 @@ and Computer Engineering</a>,</br>
         How AI Leaks Information — and How It Can Forget @ UT Austin Digital Trust Symposium, Nov. 2025.
     </li>
     <li>
-        Invited Talk about Trustworthy Machine Learning @ SCU Top-notched Program, Online, Dec.09, 2023.
+        Invited Talk about Trustworthy Machine Learning with OOD Data @ SCU Top-notched Program, Online, Dec.09, 2023.
     </li>
     <li>
         Youth PhD Talk for NeurIPS 2023 @ AI Time, Online, Nov.02, 2023.
@@ -838,7 +844,7 @@ and Computer Engineering</a>,</br>
 
 <div id="footer">
 	<div id="footer-text"></div>
-    &copy 2026 Jianing Zhu | Last Update: 2026.06
+    &copy 2026 Jianing Zhu | Last Update: 2026.09
 </div>
 </br>
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=400&t=m&d=xOKDPeEn4mmceJ5AAW9YHMjTAcz-JoFdsbMnC-iTcyU&co=203060&cmn=f21619&cmo=ff8f53'></script>
